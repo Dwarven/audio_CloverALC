@@ -1,5 +1,5 @@
 #!/bin/sh
-# Maintained by: toleda for: github.com/toleda/audio_cloverALC
+# Maintained by: toleda for: github.com/toleda/audio_CloverALC
 gFile="audio_cloverALC-130.command_v0.6"
 # Credit: bcc9, RevoGirl, PikeRAlpha, SJ_UnderWater, RehabMan, TimeWalker75a, lisai9093
 #
@@ -1235,11 +1235,11 @@ fi
 #     esac
 # done
 
-gDownloadLink="https://raw.githubusercontent.com/toleda/audio_ALC$gCodec/master/$gCodecName.zip"
+gDownloadLink="https://gitee.com/toleda/audio_ALC$gCodec/raw/master/$gCodecName.zip"
 
 if [ $gLegacy = y ]; then
     Legacy=_v100202
-    gDownloadLink="https://raw.githubusercontent.com/toleda/audio_ALC$gCodec/master/$gCodec$Legacy.zip"
+    gDownloadLink="https://gitee.com/toleda/audio_ALC$gCodec/raw/master/$gCodec$Legacy.zip"
 fi
 
 if [ $gBetacodec = $gCodecName ]; then
@@ -1260,7 +1260,7 @@ do
     esac
 done
 
-gDownloadLink="https://raw.githubusercontent.com/toleda/audio_alc_test/master/$gCodec.zip"
+gDownloadLink="https://gitee.com/toleda/audio_alc_test/raw/master/$gCodec.zip"
 
 fi
 
@@ -1378,9 +1378,9 @@ case $gDebug in
 
 0|1 )
     if [ $gBetaALC = 0 ]; then
-        gDownloadLink="https://raw.githubusercontent.com/toleda/audio_cloverALC/master/config-audio_cloverALC+.plist.zip"
+        gDownloadLink="https://gitee.com/toleda/audio_CloverALC/raw/master/config-audio_cloverALC+.plist.zip"
     else
-        gDownloadLink="https://raw.githubusercontent.com/toleda/audio_alc_test/master/config-audio_cloverALC+.plist.zip"
+        gDownloadLink="https://gitee.com/toleda/audio_alc_test/raw/master/config-audio_cloverALC+.plist.zip"
     fi
 
     sudo curl -o "/tmp/config-audio_cloverALC+.plist.zip" $gDownloadLink
@@ -1688,9 +1688,9 @@ sudo rm -R /tmp/config-audio_cloverALC.plist
 
 if [ $gBetaALC = 0 ]; then
     echo "Download config kext and install ..."
-    gDownloadLink="https://raw.githubusercontent.com/toleda/audio_cloverALC/master/realtekALC.kext.zip"
+    gDownloadLink="https://gitee.com/toleda/audio_CloverALC/raw/master/realtekALC.kext.zip"
 else
-    gDownloadLink="https://raw.githubusercontent.com/toleda/audio_alc_test/master/realtekALC.kext.zip"
+    gDownloadLink="https://gitee.com/toleda/audio_alc_test/raw/master/realtekALC.kext.zip"
 fi
 
 sudo curl -o "/tmp/realtekALC.kext.zip" $gDownloadLink
